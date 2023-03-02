@@ -1,0 +1,14 @@
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\bin\Debug\net6.0\Assignment-3Model.deps.json
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\bin\Debug\net6.0\Assignment-3Model.dll
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\bin\Debug\net6.0\Assignment-3Model.pdb
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\obj\Debug\net6.0\Assignment-3Model.csproj.AssemblyReference.cache
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\obj\Debug\net6.0\Assignment-3Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\obj\Debug\net6.0\Assignment-3Model.AssemblyInfoInputs.cache
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\obj\Debug\net6.0\Assignment-3Model.AssemblyInfo.cs
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\obj\Debug\net6.0\Assignment-3Model.csproj.CoreCompileInputs.cache
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\obj\Debug\net6.0\Assignment-3Model.dll
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\obj\Debug\net6.0\refint\Assignment-3Model.dll
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\obj\Debug\net6.0\Assignment-3Model.pdb
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\obj\Debug\net6.0\ref\Assignment-3Model.dll
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\bin\Debug\net6.0\Assignment-3Model.runtimeconfig.json
+D:\learning\Dotnet\Web-Api\Assignment-3\Assignment-3Model\obj\Debug\net6.0\Assignment-3Model.genruntimeconfig.cache

@@ -1,0 +1,145 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3mvc\\Assignment-3mvc.csproj": {}
+  },
+  "projects": {
+    "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3Model\\Assignment-3Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3Model\\Assignment-3Model.csproj",
+        "projectName": "Assignment-3Model",
+        "projectPath": "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3Model\\Assignment-3Model.csproj",
+        "packagesPath": "C:\\Users\\T2-103\\.nuget\\packages\\",
+        "outputPath": "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\T2-103\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3mvc\\Assignment-3mvc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3mvc\\Assignment-3mvc.csproj",
+        "projectName": "Assignment-3mvc",
+        "projectPath": "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3mvc\\Assignment-3mvc.csproj",
+        "packagesPath": "C:\\Users\\T2-103\\.nuget\\packages\\",
+        "outputPath": "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3mvc\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\T2-103\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3Model\\Assignment-3Model.csproj": {
+                "projectPath": "D:\\learning\\Dotnet\\Web-Api\\Assignment-3\\Assignment-3Model\\Assignment-3Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

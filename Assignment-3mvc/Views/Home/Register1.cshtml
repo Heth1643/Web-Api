@@ -1,0 +1,78 @@
+@model Assignment_3Model.Register
+@{
+    ViewData["Title"] = "Register1";
+}
+
+@using (Html.BeginForm("Register1","Home",FormMethod.Post))
+{
+   
+ 
+<div class="container">
+
+    <h2>Registration Form</h2>
+ 
+<p id="error"></p>
+<table>
+    <tr>
+        <th>First Name <span style="color: red;">*</span></th>
+        <td>@Html.TextBoxFor(x=>x.Fname,new{id="fname"})</td>
+         <td> <span asp-validation-for="Fname" class="text-danger"></span></td>
+    </tr>
+     <tr>
+        <th>Last Name</th>
+        <td>@Html.TextBoxFor(x=>x.Lname)</td>
+      
+    </tr>
+     <tr>
+        <th>Contact No <span style="color: red;">*</span></th>
+        <td>@Html.TextBoxFor(x=>x.Cno,new { type = "number",id="cno"})</td>
+         <td> <span asp-validation-for="Cno" class="text-danger"></span></td>
+    </tr>
+     <tr>
+        <th>Date Of Birth</th>
+        <td>@Html.TextBoxFor(x=>x.Dob,new {Type="Date"})</td>
+    </tr>
+     <tr>
+        <th>Email <span style="color: red;">*</span></th>
+        <td>@Html.TextBoxFor(x=>x.Email,new { type = "email" ,id="email"})</td>
+         <td> <span asp-validation-for="Email" class="text-danger"></span></td>
+    </tr>
+     <tr>
+        <th>Password <span style="color: red;">*</span></th>
+        <td>@Html.PasswordFor(x=>x.Password,new{id="password",style="width:97%"})
+   <i class="far fa-eye" id="myicon" onclick="show()" style="margin-left: -26px; cursor: pointer;"></i>
+   </td>
+   <td> <span asp-validation-for="Password" class="text-danger"></span></td>
+
+      
+        
+    </tr>
+  
+
+     <tr>
+        <th>Confirm Password <span style="color: red;">*</span></th>
+     <td>
+      <input type="password" id="cpassword">
+         <span id="message2" class="text-danger"></span>
+        </td>
+        
+    </tr>
+     <tr>
+        <th></th>
+        <td><input type="submit" class="btn btn-success" id="mybtn" value="Submit"></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td><a asp-action="Login" asp-controller="Home" >Already have Account?</a></td>
+<p id="submitbtn"></p>
+    </tr>
+  
+       
+</table>
+
+
+</div>
+
+
+
+}

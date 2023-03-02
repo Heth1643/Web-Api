@@ -1,0 +1,83 @@
+@model Assignment_3Model.Register
+@{
+    ViewData["Title"] = "Profile";
+}
+
+  @Html.ValidationSummary(true," ",new{@class="text-danger"})
+ 
+@using (Html.BeginForm("Profile","profile",FormMethod.Post))
+{
+    
+<h3>My Profile</h3><br><br>
+  <h4> Hi @ViewBag.Fname  @ViewBag.Lname</h4><br>
+  <h4>Added On: @ViewBag.Dateadded</h4><br>
+ 
+
+  if(@ViewBag.Lastupdate!=null)
+  {
+<h4>Updated On: @ViewBag.Lastupdate</h4><br>
+  }
+  <h4> <a asp-action="Logout"  asp-controller="Home" class="link-primary">Logout</a></h4><br><br>
+ if(TempData["update"]!=null)
+ {
+  <script>
+    alert("Data Updated Succesfully");
+  </script>
+ }
+<table>
+
+    <tr>
+        <input type="hidden" asp-for="Recid" value="@ViewBag.Recid">
+        <input type="hidden" asp-for="Dateadded" value="@ViewBag.Dateadded">
+
+      
+         
+        <th>First Name <span style="color: red;">*</span></th> 
+        <td>@Html.TextBox("Fname", (object)ViewBag.Fname,new{required = "required"})</td>
+    </tr>
+     <tr>
+        <th>Last Name</th> 
+     <td>@Html.TextBox("Lname", (object)ViewBag.Lname,new {required = "required"})</td>
+       
+    </tr>
+     <tr>
+        <th>Contact No <span style="color: red;">*</span></th>
+        <td>@Html.TextBox("Cno", (object)ViewBag.Cno,new { type = "number",required = "required"})</td>
+    </tr>
+     <tr>
+        <th>Date Of Birth</th>
+        <td>
+           @Html.TextBox("Dob", TempData["dob"],new {Type="text",@class="",required = "required"}) 
+        
+
+          </td>
+    </tr>
+     <tr>
+        <th>Email <span style="color: red;">*</span></th>
+        <td>@Html.TextBox("Email",(object)ViewBag.Email,new {type = "email" ,required = "required",format="dd-mm-yyyy"})</td>
+    </tr>
+     <tr>
+        <th>Password <span style="color: red;">*</span></th>
+     
+        <td class="d-table-cell">
+         
+           @Html.Password("Password", (object)ViewBag.Password,new{id="password",required = "required",style="width:97%;"})
+          <i class="far fa-eye" id="myicon" onclick="show()" style="margin-left: -26px; cursor: pointer;"></i>
+ 
+        </td>
+    </tr>
+     <tr>
+        <th>Confirm Password <span style="color: red;">*</span></th>
+        <td>@Html.PasswordFor(x=>x.Password,new{id="cpassword",required = "required"})</td>
+    </tr>
+     <tr>
+        <th></th>
+        <td><button type="submit" class="btn btn-success" asp-action="update" asp-controller="profile" >Save</button></td>
+    </tr>
+   
+</table>
+
+
+
+}
+

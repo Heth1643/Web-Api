@@ -1,0 +1,58 @@
+@model Assignment_3Model.Register
+@{
+    ViewData["Title"] = "Login";
+}
+
+@using (Html.BeginForm("Login","Home",FormMethod.Post))
+{
+    <div class="container" id="maindiv">
+         <h1>Login Form</h1><br>
+      
+       
+           
+        <table id="tbl">
+             
+            <tr>
+                <th>Email Id</th>
+                  <td>@Html.TextBoxFor(x=>x.Email,new{id="email"})</td>
+                  <td>    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })  
+    </td>
+                      
+        
+                 </tr>
+                  <tr>
+                     <th>Password</th>
+                <td>@Html.PasswordFor(x=>x.Password,new{style="width:97%;"})
+                    
+          <i class="far fa-eye" id="myicon" onclick="show()" style="margin-left: -26px; cursor: pointer;"></i>
+  
+   
+                </td>
+                <td>
+                       @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })  
+                     
+                </td></tr>
+             
+              
+                    <tr>
+                        <td></td>
+                <td>
+                    <input type="submit" class="btn btn-primary" value="Login">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                     <a asp-action="Register" asp-controller="Home" class="link-primary">Don't have Account?</a>
+                </td>
+                
+            </tr>
+           
+        </table>
+       
+    
+</div>
+
+
+
+}
